@@ -1,4 +1,4 @@
-[Live User Site](chrwog.github.io/index.html)
+[Live User Site](http://chrwog.github.io/index.html)
 
 ###What did you learn about CSS padding, borders, and margin by doing this challenge?
 
