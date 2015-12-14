@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+    <title>Your page title here</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+      <nav class="nav">
+        <ul>
+          <li><a href="../index.html">About Me</a></li>
+          <li><a href="blog-template.html">Blog</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Resume</a></li>
+        </ul>
+          
+      </nav>
+      <main>
+        <section>
+          <h1 class="title">Enumerable#map</h1>
+          <h2 class="date">12.13.15</h2>
+          <p>
+           The enumerable #map is an invaluable expression that I personally used for the group research methods challenge this week. More specifically I used the destructive version of this method.
+           </p>
+           <p>We were given an array filled with strings and numbers, and a hash filled with string keys and number values:
+           </p>
+
+<div style="background: #111111; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #ffffff">i_want_pets</span> <span style="color: #ffffff">=</span> <span style="color: #ffffff">[</span><span style="color: #0086d2">&quot;I&quot;</span><span style="color: #ffffff">,</span> <span style="color: #0086d2">&quot;want&quot;</span><span style="color: #ffffff">,</span> <span style="color: #0086f7; font-weight: bold">3</span><span style="color: #ffffff">,</span> <span style="color: #0086d2">&quot;pets&quot;</span><span style="color: #ffffff">,</span> <span style="color: #0086d2">&quot;but&quot;</span><span style="color: #ffffff">,</span> <span style="color: #0086d2">&quot;only&quot;</span><span style="color: #ffffff">,</span> <span style="color: #0086d2">&quot;have&quot;</span><span style="color: #ffffff">,</span> <span style="color: #0086f7; font-weight: bold">2</span><span style="color: #ffffff">]</span>
+<span style="color: #ffffff">my_family_pets_ages</span> <span style="color: #ffffff">=</span> <span style="color: #ffffff">{</span><span style="color: #0086d2">&quot;Evi&quot;</span> <span style="color: #ffffff">=&gt;</span> <span style="color: #0086f7; font-weight: bold">6</span><span style="color: #ffffff">,</span> <span style="color: #0086d2">&quot;Ditto&quot;</span> <span style="color: #ffffff">=&gt;</span> <span style="color: #0086f7; font-weight: bold">3</span><span style="color: #ffffff">,</span> <span style="color: #0086d2">&quot;Hoobie&quot;</span> <span style="color: #ffffff">=&gt;</span> <span style="color: #0086f7; font-weight: bold">3</span><span style="color: #ffffff">,</span> <span style="color: #0086d2">&quot;George&quot;</span> <span style="color: #ffffff">=&gt;</span> <span style="color: #0086f7; font-weight: bold">12</span><span style="color: #ffffff">,</span> <span style="color: #0086d2">&quot;Bogart&quot;</span> <span style="color: #ffffff">=&gt;</span> <span style="color: #0086f7; font-weight: bold">4</span><span style="color: #ffffff">,</span> <span style="color: #0086d2">&quot;Poly&quot;</span> <span style="color: #ffffff">=&gt;</span> <span style="color: #0086f7; font-weight: bold">4</span><span style="color: #ffffff">,</span> <span style="color: #0086d2">&quot;Annabelle&quot;</span> <span style="color: #ffffff">=&gt;</span> <span style="color: #0086f7; font-weight: bold">0</span><span style="color: #ffffff">}</span>
+</pre></div>
+
+
+
+<p>My objective was to write a method that let the user give a number to increase the number of pets they wanted. Additionally another method had to be written to update the ages of the current pets in the hash.</p>
+
+<p>The .map! came to the rescue!</p>
+
+<p>The .map method returns a new array with the results of running the code block for every element. That sounds an awful like the .each method that many people use right? Well the key difference is that map returns the results of the iterations to a new object. The .each method will run the block, discard the results, and return the original object.</p>
+
+<p>For the group challenge the map! method let me retrieve the proper results. Below is the code I used:</p>
+
+<div style="background: #111111; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #fb660a; font-weight: bold">def</span> <span style="color: #ff0086; font-weight: bold">my_array_modification_method!</span><span style="color: #ffffff">(source,</span> <span style="color: #ffffff">thing_to_modify)</span>
+   <span style="color: #ffffff">source.map!</span> <span style="color: #fb660a; font-weight: bold">do</span> <span style="color: #ffffff">|x|</span>  
+     <span style="color: #fb660a; font-weight: bold">if</span> <span style="color: #ffffff">x.is_a?(Integer)</span>
+       <span style="color: #ffffff">x</span> <span style="color: #ffffff">+=</span> <span style="color: #ffffff">thing_to_modify</span>
+     <span style="color: #fb660a; font-weight: bold">else</span> <span style="color: #ffffff">x</span>
+     <span style="color: #fb660a; font-weight: bold">end</span>
+   <span style="color: #fb660a; font-weight: bold">end</span>
+ <span style="color: #fb660a; font-weight: bold">end</span>
+</pre></div>
+
+<p>The first step was to take the first element of the array and put it into variable x. I then checked to see if it was an integer with the .is_a? method. If it was, the user given number (thing_to_modify) was added to it. The .map! method lets the return be the result as well as change the original array element as per the instructions given.</p>
+
+<p>I hope this example shows how .map can be used effectively. Happy coding!
+          </p>
+    
+
+            <!-- copy and paste as many sections as you want to add paragraphs -->
+        </section>
+      </main>
+      <!-- <footer><a href="http://facebook.com"><img src="../imgs/facebook-icon.png" class="icon"></a><a href="#"><img src="../imgs/linkedin-icon.png" class="icon"></a><a href="http://github.com/chrwog"><img src="../imgs/github-icon.png" class="icon"></a><a href="mailto:wongachris@gmail.com"><img src="../imgs/contact-icon.png" class="icon"></a>Copyright 2015 Chris Wong</footer> -->
+</body>
+</html>
