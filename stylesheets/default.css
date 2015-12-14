@@ -7,6 +7,7 @@ background-color: #ffffff;
 }
 .profile {
 float: left;
+padding: 5px;
 }
 
 .title{
@@ -21,6 +22,7 @@ body {
 	font-family: Helvetica, Arial, sans-serif;
 	font-weight: 300;
 	font-size: 15px;
+
 }
 nav ul li {
 		display: inline-block;
@@ -48,8 +50,25 @@ footer {
 	background:#ffffff;
 	width:100%;
 	height:2em;
-	position:absolute;
+	position:fixed;
 	bottom:0;
 	left:0;
-	margin-top: 10px;
+	margin-bottom: 25px;
+	margin-left: 25px;
+
+	
+
+}
+
+.icon {
+	width:32px;
+	height: 32px;
+	margin:5px;
+	border-radius: 50%;
+	transition: all 0.5s;
+}
+
+.icon:hover {
+	background-color: #00c0ff;
+	
 }
