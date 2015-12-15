@@ -3,15 +3,16 @@ background-color: #ffffff;
 	display: block;
 	margin: auto;
 	overflow: hidden;
-	width: 100%; 
+	width: 50%; 
 }
 .profile {
-float: left;
+
 padding: 5px;
+border-radius: 10%;
 }
 
 .title{
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: 'Oxygen', Helvetica, Arial, sans-serif;
 	font-weight: 300;
 	font-size: 2em;
 }
@@ -19,10 +20,13 @@ padding: 5px;
 body {
 	background-color: white;
 	color: #222;
-	font-family: Helvetica, Arial, sans-serif;
-	font-weight: 300;
-	font-size: 15px;
-
+	font-family: 'Oxygen', Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	font-size: 1em;
+	min-height: 400px;
+    margin-bottom: 100px;
+    clear: both; /*Research more on this*/
+	
 }
 nav ul li {
 		display: inline-block;
@@ -53,11 +57,25 @@ footer {
 	position:fixed;
 	bottom:0;
 	left:0;
-	margin-bottom: 25px;
-	margin-left: 25px;
+	padding: 10px 25px 25px 50px;
 
-	
+}
 
+section {
+	margin: auto;
+	width: 75%;
+	max-width: 960px;
+}
+
+article {
+
+	margin: auto;
+	width: 75%;
+	max-width: 960px;
+}
+
+article header {
+	font-size: 1.5em;
 }
 
 .icon {
@@ -71,4 +89,24 @@ footer {
 .icon:hover {
 	background-color: #00c0ff;
 	
+}
+
+article a:link {
+	text-decoration: none;
+	font-weight: 400;
+	color: orange;
+}
+
+article a:visited {
+ color: orange;
+}
+
+article a:hover {
+	color: #00c0ff;
+	transition: all 0.5s;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+	font-size: 1em;
 }
