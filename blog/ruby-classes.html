@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
+    <title>Ruby Classes</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+      <nav class="nav">
+        <ul>
+          <li><a href="../index.html">About Me</a></li>
+          <li><a href="blog-template.html">Blog</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Resume</a></li>
+        </ul>
+          
+      </nav>
+      <main>
+        <section>
+          <h2 class="date">28 Dec 2015</h2>
+          <h1 class="title">Ruby Classes</h1>
+          <p>
+          The first example that comes to mind when thinking about how to explain classes and methods in ruby is a microwave. A microwave has many different functions. Most microwaves can cook food, defrost, tell time, and countdown from a given time. Some microwaves even have other completely different functions like over the range microwaves can exhaust steam from cooking on the stove! This is very similar to how classes and methods work.
+          </p>
+          <p>You can think of the class as the microwave. It is the main body that everything else revolves around. The methods are like the functions of the microwave (cook, defrost, etc.)
+          </p>
+          <p>Classes have variables that can represent just about anything. These are called instance variables. Keeping with our microwave analogy, an instance variable that a microwave would have is the time. When you want to cook something in the microwave you enter a time and then press cook. When you want to defrost something you enter the time and then hit defrost. The common variable is time. A lot of the microwave functions can do something with the time input. This is just like the methods in a class. Methods in the class can use the instance variable when running their code.
+          </p>
+          <p>Methods also have their own personal variables that can only be used inside that method. This would be like selecting the specific power setting on the microwave. The microwave power function could have low medium or high. The cook and defrost functions can't use these variables. They can only use a time input. Below is what the code for a microwave class would look like</p>
+            <!-- copy and paste as many sections as you want to add paragraphs -->
+        </section>
+        <section>
+          <!-- HTML generated using hilite.me --><div style="background: #111111; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #fb660a; font-weight: bold">class</span> <span style="color: #ffffff">Microwave</span>
+  <span style="color: #fb660a; font-weight: bold">def</span> <span style="color: #ff0086; font-weight: bold">initialize</span>
+    <span style="color: #fb660a">@time</span> <span style="color: #ffffff">=</span> <span style="color: #0086f7; font-weight: bold">4</span>
+  <span style="color: #fb660a; font-weight: bold">end</span>
+  
+  <span style="color: #fb660a; font-weight: bold">def</span> <span style="color: #ff0086; font-weight: bold">power</span> <span style="color: #ffffff">(setting)</span>
+    <span style="color: #fb660a">@current_power</span> <span style="color: #ffffff">=</span> <span style="color: #ffffff">setting</span>
+  <span style="color: #fb660a; font-weight: bold">end</span>
+  
+  <span style="color: #fb660a; font-weight: bold">def</span> <span style="color: #ff0086; font-weight: bold">cook</span>
+    <span style="color: #fb660a">@time</span> <span style="color: #ffffff">+</span> <span style="color: #fb660a">@current_power</span>
+  <span style="color: #fb660a; font-weight: bold">end</span>
+  
+  <span style="color: #fb660a; font-weight: bold">def</span> <span style="color: #ff0086; font-weight: bold">defrost</span>
+    <span style="color: #ffffff">frost_power</span> <span style="color: #ffffff">=</span> <span style="color: #fb660a">@current_power</span> <span style="color: #ffffff">-</span> <span style="color: #0086f7; font-weight: bold">4</span>
+  <span style="color: #fb660a; font-weight: bold">end</span>
+  
+  <span style="color: #fb660a; font-weight: bold">def</span> <span style="color: #ff0086; font-weight: bold">timer</span>
+    <span style="color: #fb660a; font-weight: bold">while</span> <span style="color: #fb660a">@time</span> <span style="color: #ffffff">&gt;</span> <span style="color: #0086f7; font-weight: bold">0</span>
+    <span style="color: #fb660a">@time</span> <span style="color: #ffffff">-=</span> <span style="color: #0086f7; font-weight: bold">1</span>
+  <span style="color: #fb660a; font-weight: bold">end</span>
+<span style="color: #fb660a; font-weight: bold">end</span>
+</pre></div>
+
+        </section>
+      </main>
+      <footer><a href="http://facebook.com" target="_blank"><img src="../imgs/facebook-icon.png" class="icon"></a><a href="http://www.linkedin.com/in/cwong11" target="_blank"><img src="../imgs/linkedin-icon.png" class="icon"></a><a href="http://github.com/chrwog" target="_blank"><img src="../imgs/github-icon.png" class="icon"></a><a href="mailto:wongachris@gmail.com"><img src="../imgs/contact-icon.png" class="icon"></a>Copyright 2015 Chris Wong</footer>
+</body>
+</html>
