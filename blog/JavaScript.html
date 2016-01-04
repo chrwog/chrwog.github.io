@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
+    <title>Ruby Hashes vs JavaScript Objects</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+      <nav class="nav">
+        <ul>
+          <li><a href="../index.html">About Me</a></li>
+          <li><a href="blog-template.html">Blog</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Resume</a></li>
+        </ul>
+          
+      </nav>
+      <main>
+        <section>
+          <h2 class="date">4 Jan 2016</h2>
+          <h1 class="title">Ruby Hashes vs JavaScript Objects</h1>
+          <p>
+          Ruby Hashes and JavaScript Objects are very similar with a few key differences. They are both considered objects in their respective languages, and store data. The differences are in the details.
+          </p>
+          <p>
+          Lets start with what they have in common. In Ruby hashes store data as key-value pairs. The key represents the way a user would access the data associated with that key. In JavaScript you can do something similar by creating an object with properties associated with values. Below is an example of both.
+          </p>
+          <br>
+          <!-- HTML generated using hilite.me --><div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #f8f8f2">ruby_hash</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">{</span>
+  <span style="color: #e6db74">&quot;Dog_name&quot;</span> <span style="color: #f92672">=&gt;</span> <span style="color: #e6db74">&quot;Rex&quot;</span><span style="color: #f8f8f2">,</span>
+  <span style="color: #e6db74">&quot;Cat_name&quot;</span> <span style="color: #f92672">=&gt;</span> <span style="color: #e6db74">&quot;Snickers&quot;</span><span style="color: #f8f8f2">,</span>
+<span style="color: #e6db74">&quot;Fish_name&quot;</span> <span style="color: #f92672">=&gt;</span> <span style="color: #e6db74">&quot;Goldfinger&quot;</span>
+  <span style="color: #f8f8f2">}</span>
+</pre></div>
+<br>
+<!-- HTML generated using hilite.me --><div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #66d9ef">var</span> <span style="color: #a6e22e">javaScriptObject</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">{</span>
+  <span style="color: #a6e22e">dogName</span><span style="color: #f92672">:</span> <span style="color: #e6db74">&quot;Rex&quot;</span><span style="color: #f8f8f2">,</span>
+  <span style="color: #a6e22e">catName</span><span style="color: #f92672">:</span> <span style="color: #e6db74">&quot;Snickers&quot;</span><span style="color: #f8f8f2">,</span>
+  <span style="color: #a6e22e">fishName</span><span style="color: #f92672">:</span> <span style="color: #e6db74">&quot;Goldfinger&quot;</span>
+<span style="color: #f8f8f2">};</span>
+</pre></div>
+<br>
+
+          <p>You can see how they are similar but also slightly different in terms of the way it is written. Coding languages are like real world languages. Some languages are very similar, but have little nuances that make them different.</p>
+          <p>The way you add to them is different depending on the language. In ruby you can add to a hash this way:</p>
+          <br>
+          <!-- HTML generated using hilite.me --><div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #f8f8f2">ruby_hash</span><span style="color: #f92672">[</span><span style="color: #e6db74">&quot;Hamster_name&quot;</span><span style="color: #f92672">]</span> <span style="color: #f92672">=</span> <span style="color: #e6db74">&quot;Turbo&quot;</span>
+</pre></div>
+<br>
+          <p>In JavaScript you do this:</p>
+          <br>
+          <!-- HTML generated using hilite.me --><div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #a6e22e">javaScriptObject</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">hamsterName</span> <span style="color: #f92672">=</span> <span style="color: #e6db74">&quot;Turbo&quot;</span>
+</pre></div>
+<br>
+          <p>I hope this help you learn a little about how Ruby and JavaScript are both similar and different.</p>
+        </section>
+      </main>
+      <footer><a href="http://facebook.com" target="_blank"><img src="../imgs/facebook-icon.png" class="icon"></a><a href="http://www.linkedin.com/in/cwong11" target="_blank"><img src="../imgs/linkedin-icon.png" class="icon"></a><a href="http://github.com/chrwog" target="_blank"><img src="../imgs/github-icon.png" class="icon"></a><a href="mailto:wongachris@gmail.com"><img src="../imgs/contact-icon.png" class="icon"></a>Copyright 2015 Chris Wong</footer>
+</body>
+</html>
