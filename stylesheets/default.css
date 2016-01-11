@@ -5,6 +5,14 @@ background-color: #ffffff;
 	overflow: hidden;
 	width: 50%; 
 }
+
+.nav2 {
+background-color: #ffffff;
+	display: block;
+	margin: auto;
+	overflow: hidden;
+	width: 75%; 
+}
 .profile {
 
 padding: 5px;
@@ -15,6 +23,12 @@ border-radius: 10%;
 	font-family: 'Oxygen', Helvetica, Arial, sans-serif;
 	font-weight: 300;
 	font-size: 2em;
+}
+
+.subtitle{
+	font-family: 'Oxygen', Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	font-size: 1.5em;
 }
 
 body {
@@ -110,3 +124,10 @@ h1, h2, h3 {
 	font-weight: normal;
 	font-size: 1em;
 }
+
+.image_size {
+	max-width: 1024px;
+}
+
+.static {}
+.absolute {}

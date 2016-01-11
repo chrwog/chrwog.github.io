@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+	<link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+	<link href='https://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
+	<title>Projects</title>
+</head>
+<body>
+	<header></header>
+	<nav class="nav">
+	<ul>
+		<li><a href="../index.html">About Me</a></li>
+		<li><a href="../blog/blog-template.html">Blog</a></li>
+		<li><a href="index.html">Projects</a></li>
+		<li><a href="#">Resume</a></li>
+		</ul>
+		
+	</nav>
+<nav class="nav2">
+	<ul>
+		<li><a href="#static">position: static</a></li>
+		<li><a href="#relative">position: relative</a></li>
+		<li><a href="#fixed">position: fixed</a></li>
+		<li><a href="#absolute">position: absolute</a></li>
+		</ul>
+		
+	</nav>
+	<main>
+	<article>
+		<h3 class="title">CSS Positioning Cheat Sheat</h3>
+		<p>
+		This is a quick and dirty CSS positioning cheat sheet. I always forget which type of positioning I should use to get my elements right were I want them. Hopefully this sheet will make a good reference!
+		</p>
+		
+		<div id="static">
+		<h4 class ="subtitle">position: static;</h4>
+		<p>
+		This is the default state that html elements are in when first created. They are not affected by top, bottom, left, and right properties. They're not positioned in a particular way, it is positioned according to the normal flow of the page.
+		</p>
+
+		<p>
+		Example: Div 2 is in the static position. It is in the flow of the web page. Since Div 1 takes up the width of the page, Div 2 falls right below it on the far left.
+		<img class="image_size" src="imgs/static.png">
+		</p>
+
+		<div id="relative">
+		<h4 class ="subtitle">position: relative;</h4>
+		<p>
+		A html element that is positioned relative to its normal position. You can adjust the distance away from the normal position using the top, bottom, left, and right properties. Other elements will not be adjusted to fit into any gap left by the element.
+		</p>
+
+		<p>
+		Example: Div 2 now has a relative position of left: 50px. This moves the div to the right of it's static position 50px.
+		<img class="image_size" src="imgs/relative.png">
+		</p>
+
+		<div id="fixed">
+		<h4 class="subtitle">position: fixed;</h4>
+		<p>
+		A html element with a fixed position is positioned relative to the view of the web browser. The element will always stay in place even if the page is scrolled by the user. You use the top, bottom, left, and right properties to change the position.
+		</p>
+
+		<p>
+		Example: Div 2 is in a fixed position. It will always stay in this position regardless of where the viewport of the web browser window is on the page.
+		<img class="image_size" src="imgs/fixed.png">
+		</p>
+		
+		<div id ="absolute">
+		<h4 class="subtitle">position: absolute;</h4>
+		<p>
+		An element with an absolute position is positioned relative to the nearest positioned parent. If the element has no positioned ancestors, it uses the document body.
+		</p>
+		
+		<p>
+		Example: Div 2 is now in the absolute position. Since Div 2 does not have a parent, it is using the document body as the parent to position itself. Specifically 400px from the top, and 50px from the left.
+		<img class="image_size" src="imgs/absolute.png">
+		</p>
+		</article>
+	</main>
+	<footer><a href="http://facebook.com"><img src="../imgs/facebook-icon.png" class="icon"></a><a href="#"><img src="../imgs/linkedin-icon.png" class="icon"></a><a href="http://github.com/chrwog"><img src="../imgs/github-icon.png" class="icon"></a><a href="mailto:wongachris@gmail.com"><img src="../imgs/contact-icon.png" class="icon"></a>Copyright 2015 Chris Wong</footer>
+
+	
+</body>
+</html>
